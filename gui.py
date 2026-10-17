@@ -84,9 +84,9 @@ class Game:
                 if piece != '.':
                     key = ''
                     if piece.isupper():  # white
-                        key = 'w' + piece.lower()  # e.g., 'wq' for white queen
+                        key = 'w' + piece.lower() 
                     else:  # black
-                        key = 'b' + piece  # e.g., 'bn' for black knight
+                        key = 'b' + piece  
                     self.win.blit(IMAGES[key], (c*SQUARE_SIZE, r*SQUARE_SIZE))
 
     def draw_status(self):

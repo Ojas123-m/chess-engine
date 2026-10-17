@@ -744,7 +744,7 @@ class ChessEngine:
             if beta > stand_pat:
                 beta = stand_pat
         
-        # Only consider capture moves
+       
         moves = board.get_legal_moves()
         capture_moves = [move for move in moves if move.captured != '.']
         ordered_captures = self.order_moves(board, capture_moves, maximizing_player)
